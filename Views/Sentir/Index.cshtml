@@ -1,0 +1,45 @@
+@{
+    ViewData["Title"] = "Comentarios";
+}
+
+<h2>@ViewData["Title"]</h2>
+
+<form  asp-action="Comentario" method="post">
+    <div  class="form-group">
+        <label  style="color:white"for="comentario">Comentario en ingles:</label>
+        <textarea  class="form-control" id="comentario" name="comentario" rows="5" required></textarea>
+    </div>
+    <br>
+    <button style="background: rgb(192, 163, 110); border: red; type="submit" class="btn btn-primary">Comentar</button>
+</form>
+
+<div id="resultado" style="display:none;"></div>
+
+<style>
+    body{
+  
+   width: 100%;
+   background-color: #000;
+   background-image: url(https://i.pinimg.com/originals/b0/7b/5b/b07b5bbfc32b4958810d59a79cd3aac9.gif);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: 25%;
+   
+}
+    h2{
+        color: rgb(238, 238, 181);
+        text-align: center;
+    }
+
+    label{
+
+    }
+
+    button{
+       width: 120px; 
+  margin-left: 50%;
+  transform: translateX(-50%);
+    }
+
+
+</style>
